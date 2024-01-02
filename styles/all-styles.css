@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  margin: 40px;
+  background-color: rgb(222, 226, 252);
+}
+
+/* Candal is 400(R)
+and Fira Sans is 400(R), 700(B) */
+
+img {
+  width: 300px;
+  height: 150px;
+}
+
+header > h1 {
+  font-family: "Candal", sans-serif;
+  font-size: 50px;
+  color: rgb(55, 81, 225);
+}
+
+h2 {
+  font-family: "Candal", sans-serif;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+footer p {
+  color: rgb(106, 106, 106);
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+main {
+  text-align: left;
+  width: 800px;
+  height: 775px;
+  margin: 50px auto 30px;
+  padding: 25px;
+  border: 10px solid rgb(46, 72, 221);
+  border-radius: 10px;
+  background-color: rgb(46, 72, 221);
+}
+
+ul {
+  list-style: none;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  padding: 0px 0px 0px 15px;
+  color: rgb(255, 255, 255);
+}
+
+li {
+  margin: 20px auto;
+}
+
+li.key-points {
+  color: rgba(224, 220, 6, 0.983);
+  /* color: rgba(226, 223, 43, 0.992); */
+  list-style: square;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: rgba(224, 220, 6, 0.983);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+a:hover,
+a:active {
+  background-color: rgba(247, 244, 63, 0.983);
+}
+
+a#footer-anchor {
+  display: inline-block;
+  background-color: rgb(207, 155, 59);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+a#footer-anchor:hover,
+a#footer-anchor:active {
+  background-color: rgb(217, 176, 99);
+}
+
+footer {
+  width: auto;
+  height: 100px;
+}
