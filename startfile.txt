@@ -1,2 +1,1 @@
-All course sections start from 'section 1' branch.
-Remember to delete current branches as new branches are created
+new branch creation rules have been made
