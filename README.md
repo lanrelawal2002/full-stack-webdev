@@ -1,1 +1,1 @@
-My code from the course 100 days of code by Max and Manu
+Max's version of the HTML & CSS PRACTICE AND SUMMARY section.
