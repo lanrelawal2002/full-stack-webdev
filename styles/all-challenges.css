@@ -1,0 +1,70 @@
+header {
+  margin-bottom: 65px;
+}
+
+.master-basic {
+  background-color: rgb(223, 112, 98);
+}
+
+body {
+  background-color: rgb(16, 17, 12, 0.23);
+}
+
+h1 {
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.736);
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(90, 65, 65);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(41, 2, 42);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#objectives-statement {
+  margin: 12px 0px;
+}
+
+main p {
+  margin: 10px;
+  /* color: rgba(12, 9, 12, 0.945); */
+  color: rgb(3, 37, 34);
+}
+
+a {
+  background-color: rgb(167, 1, 78);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  border-radius: 4px;
+  border: 1px solid rgb(167, 1, 78);
+  display: inline-block;
+  margin: 0px;
+  padding: 18px 24px;
+}
+
+a:hover {
+  background-color: rgb(180, 12, 90);
+}
+
+ol {
+  list-style: none;
+  width: 500px;
+  margin: 36px auto 36px auto;
+  padding: 0px;
+}
+
+li {
+  margin: 32px;
+  padding: 15px;
+  background-color: rgb(221, 133, 121);
+  color: rgb(83, 75, 75);
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
