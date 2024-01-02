@@ -1,0 +1,1 @@
+All course sections start from 'section 1' branch.
