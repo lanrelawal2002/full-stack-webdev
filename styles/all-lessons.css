@@ -1,0 +1,39 @@
+main {
+  width: 1000px;
+  margin: 5px auto 45px;
+}
+
+header {
+  text-align: center;
+  padding: 12px;
+}
+
+header p {
+  text-align: center;
+}
+
+a#more-details {
+  color: rgb(216, 43, 20);
+  text-decoration: underline;
+}
+
+ol {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  font-size: 21px;
+  margin: 22px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+li.choco-points {
+  background-color: rgb(176, 169, 165);
+}
+
+li.green-points {
+  background-color: rgb(191, 202, 148);
+}

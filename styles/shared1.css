@@ -1,0 +1,25 @@
+body {
+  margin: 89px 90px 90px;
+  /* background-color: rgb(246, 246, 246); */
+  /* background-color: rgb(225, 217, 217); */
+  background-color: rgb(239, 232, 232);
+}
+
+h1 {
+  font-family: "Oswald", tahoma;
+  text-align: center;
+  color: rgb(3, 73, 94);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  font-size: 21px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  /* color: rgba(25, 4, 100, 0.792); */
+  text-decoration: none;
+  cursor: pointer;
+}

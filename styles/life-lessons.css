@@ -1,0 +1,35 @@
+header {
+  margin: 12px;
+  text-align: center;
+}
+
+main {
+  margin: 20px auto 55px;
+  /* padding: 10px 50px 50px; */
+  width: 980px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 5px 5px;
+}
+
+a#summary-only {
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(191, 202, 148);
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+a#summary-only:hover,
+a#summary-only:active {
+  background-color: rgb(175, 189, 120);
+}
+
+a.increase-power {
+  text-decoration: underline;
+  color: rgb(216, 43, 20);
+}
