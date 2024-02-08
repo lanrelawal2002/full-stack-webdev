@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: rgb(56, 53, 53);
+}
+
+header {
+  position: static;
+}
+
+main ul {
+  width: 1800px;
+  margin: 0px auto;
+}
+
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 500px;
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+main ul li div.item-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+main ul li div.actions a {
+  text-decoration: none;
+  color: rgb(77, 89, 223);
+  padding: 4px 5px;
+  border-radius: 4px;
+}
+
+main ul li div.actions a:active,
+main ul li div.actions a:hover {
+  background-color: rgb(218, 221, 255);
+}
