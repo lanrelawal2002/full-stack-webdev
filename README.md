@@ -1,1 +1,1 @@
-My code from the course 100 days of code by Max and Manu
+My code and MANU's code from the section Understanding Responsive Web Design
