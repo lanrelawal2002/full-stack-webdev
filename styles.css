@@ -78,9 +78,14 @@ main section#latest-products li.food-item img {
 }
 
 main section#latest-products li.food-item div.food-item-content {
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 1.8rem;
   text-align: center;
 }
+
+/* main section#latest-products li.food-item div.food-item-content h2 {
+  font-size: 2rem;
+} */
 
 main section#latest-products li.food-item div.food-item-content a.button {
   background-color: rgb(228, 157, 44);
