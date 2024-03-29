@@ -9,16 +9,16 @@ a {
 }
 
 header#main-header {
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(29, 26, 24);
-  padding: 0px 20px;
+  padding: 0px 5%;
 }
 
 header#main-header a#logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: rgb(238, 164, 80);
   text-transform: uppercase;
@@ -32,12 +32,12 @@ header#main-header nav ul {
 }
 
 header#main-header nav ul li {
-  margin: 0px 16px;
+  margin: 0px 1rem;
 }
 
 header#main-header nav ul li a {
   color: rgb(185, 131, 31);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 header#main-header nav ul li a:hover,
@@ -48,18 +48,18 @@ header#main-header nav ul li a:active {
 main h1 {
   text-align: center;
   color: rgb(238, 164, 80);
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 main section#latest-products {
-  width: 940px;
-  margin: 50px auto;
+  width: 61%;
+  margin: 2rem auto;
 }
 
 main section#latest-products ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
+  column-gap: 1.5rem;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -72,26 +72,21 @@ main section#latest-products li.food-item {
 }
 
 main section#latest-products li.food-item img {
-  height: 250px;
+  height: 15rem;
   width: 100%;
   object-fit: cover;
 }
 
 main section#latest-products li.food-item div.food-item-content {
-  /* padding: 16px; */
-  padding: 1.8rem;
+  padding: 1rem;
   text-align: center;
 }
-
-/* main section#latest-products li.food-item div.food-item-content h2 {
-  font-size: 2rem;
-} */
 
 main section#latest-products li.food-item div.food-item-content a.button {
   background-color: rgb(228, 157, 44);
   color: white;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
   display: inline-block;
 }
 
