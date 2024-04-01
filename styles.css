@@ -98,3 +98,18 @@ main
   a.button:active {
   background-color: rgb(221, 134, 34);
 }
+
+@media (max-width: 48rem) {
+  header#main-header nav {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main section#latest-products ul {
+    grid-template-columns: 100%;
+    row-gap: 1.5rem;
+  }
+}
