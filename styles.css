@@ -126,7 +126,7 @@ main section#latest-products {
 main section#latest-products ul {
   display: grid; /* Manuel used grid for future food items */
   grid-template-columns: 1fr 1fr;
-  column-gap: 1.5rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -136,6 +136,11 @@ main section#latest-products li.food-item {
   background-color: rgb(228, 206, 182);
   border-radius: 6px;
   overflow: hidden;
+}
+
+main section#latest-products li.food-item:nth-of-type(2),
+main section#latest-products li.food-item:nth-of-type(3) {
+  background: linear-gradient(0deg, rgb(277, 108, 16), rgb(39, 5, 50));
 }
 
 main section#latest-products li.food-item img {
