@@ -74,7 +74,8 @@ h1 {
 
 .icon {
   display: flex;
-  width: 10px;
+  width: 22px;
+  color: rgb(221, 84, 13);
 }
 
 .sub-feature-text {
