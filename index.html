@@ -16,6 +16,10 @@
     <form action="/" method="GET">
       <label for="username">Your name</label>
       <input type="text" name="user-name" id="username" />
+
+      <label for="usersuggestion">Your suggestion on how we can improve.</label>
+      <textarea id="usersuggestion" name="user-suggestion"></textarea>
+
       <label for="useremail">Your email address</label>
       <input type="email" name="user-email" id="useremail" />
       <label for="userage">Your age</label>
@@ -25,6 +29,17 @@
       <label for="userbirthdate">Your birthdate</label>
       <input type="date" name="user-birthdate" id="userbirthdate" />
       <hr />
+      <label for="favorite-color">What is your favorite color?</label>
+      <select id="favorite-color" name="user-color">
+        <option value="no-selection-made"></option>
+        <option value="orange">It has to been orange. I love oranges.</option>
+        <option value="green">
+          Green all the way. Green grasses are my thing.
+        </option>
+        <option value="brown">
+          Chocolatey goodness. My favorite color is brown
+        </option>
+      </select>
       <h2>How should we verify your account?</h2>
       <div class="signup-form">
         <input type="radio" name="contact-choice" id="verify-sms" value="sms" />
