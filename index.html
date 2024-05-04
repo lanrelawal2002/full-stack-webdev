@@ -13,93 +13,149 @@
     <title>HTML FORMS</title>
   </head>
   <body>
-    <form action="/" method="GET">
-      <label for="username">Your name</label>
-      <input type="text" name="user-name" id="username" />
+    <header>
+      <h1>Online Application Form</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>Personal details 1</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input type="text" name="user-name" id="username" />
+            </li>
+            <li>
+              <label for="useremail">Your email address</label>
+              <input type="email" name="user-email" id="useremail" />
+            </li>
+            <li>
+              <label for="userpassword">Your password</label>
+              <input type="password" name="user-password" id="userpassword" />
+            </li>
+          </ul>
+        </section>
 
-      <label for="usersuggestion">Your suggestion on how we can improve.</label>
-      <textarea id="usersuggestion" name="user-suggestion"></textarea>
+        <section>
+          <h2>Personal details 2</h2>
+          <ul>
+            <li>
+              <label for="userage">Your age</label>
+              <input type="number" step="1" name="user-age" id="userage" />
+            </li>
+            <li>
+              <label for="userbirthdate">Your birthdate</label>
+              <input type="date" name="user-birthdate" id="userbirthdate" />
+            </li>
+            <li>
+              <label for="favorite-color">What is your favorite color?</label>
+              <select id="favorite-color" name="user-color">
+                <option value="no-selection-made"></option>
+                <option value="orange">
+                  It has to been orange. I love oranges.
+                </option>
+                <option value="green">
+                  Green all the way. Green grasses are my thing.
+                </option>
+                <option value="brown">
+                  Chocolatey goodness. My favorite color is brown
+                </option>
+              </select>
+            </li>
+          </ul>
+        </section>
 
-      <label for="useremail">Your email address</label>
-      <input type="email" name="user-email" id="useremail" />
-      <label for="userage">Your age</label>
-      <input type="number" step="1" name="user-age" id="userage" />
-      <label for="userpassword">Your password</label>
-      <input type="password" name="user-password" id="userpassword" />
-      <label for="userbirthdate">Your birthdate</label>
-      <input type="date" name="user-birthdate" id="userbirthdate" />
-      <hr />
-      <label for="favorite-color">What is your favorite color?</label>
-      <select id="favorite-color" name="user-color">
-        <option value="no-selection-made"></option>
-        <option value="orange">It has to been orange. I love oranges.</option>
-        <option value="green">
-          Green all the way. Green grasses are my thing.
-        </option>
-        <option value="brown">
-          Chocolatey goodness. My favorite color is brown
-        </option>
-      </select>
-      <h2>How should we verify your account?</h2>
-      <div class="signup-form">
-        <input type="radio" name="contact-choice" id="verify-sms" value="sms" />
-        <label for="verify-sms">Via text message (SMS)</label>
-      </div>
-      <div class="signup-form">
-        <input
-          type="radio"
-          name="contact-choice"
-          id="verify-phone-call"
-          value="call"
-        />
-        <label for="verify-phone-call">Via phone call</label>
-      </div>
-      <div class="signup-form">
-        <input
-          type="radio"
-          name="contact-choice"
-          id="verify-email"
-          value="email"
-        />
-        <label for="verify-email">Via email</label>
-      </div>
-      <div class="signup-form">
-        <input
-          type="checkbox"
-          id="accept-terms"
-          name="terms"
-          value="terms-accepted"
-        />
-        <label for="accept-terms">Do you agree?</label>
-      </div>
-      <div class="signup-form">
-        <input
-          type="checkbox"
-          id="email-contact"
-          name="notify-customer"
-          value="send-mail"
-        />
-        <label for="email-contact">Contact me via email</label>
-      </div>
-      <div class="signup-form">
-        <input
-          type="checkbox"
-          id="postal-contact"
-          name="notify-customer"
-          value="use-post"
-        />
-        <label for="postal-contact">Contact me via post</label>
-      </div>
-      <div class="signup-form">
-        <input
-          type="checkbox"
-          id="call-contact"
-          name="notify-customer"
-          value="make-call"
-        />
-        <label for="call-contact">Contact me via call</label>
-      </div>
-      <button>Submit</button>
-    </form>
+        <section>
+          <label for="usersuggestion"
+            >Your suggestion on how we can improve.</label
+          >
+          <textarea id="usersuggestion" name="user-suggestion"></textarea>
+        </section>
+
+        <section>
+          <h2>How should we verify your account?</h2>
+          <ul>
+            <li class="signup-form">
+              <input
+                type="radio"
+                name="contact-choice"
+                id="verify-sms"
+                value="sms"
+              />
+              <label for="verify-sms">Via text message (SMS)</label>
+            </li>
+            <li class="signup-form">
+              <input
+                type="radio"
+                name="contact-choice"
+                id="verify-phone-call"
+                value="call"
+              />
+              <label for="verify-phone-call">Via phone call</label>
+            </li>
+            <li class="signup-form">
+              <input
+                type="radio"
+                name="contact-choice"
+                id="verify-email"
+                value="email"
+              />
+              <label for="verify-email">Via email</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="signup-form">
+              <input
+                type="checkbox"
+                id="email-contact"
+                name="notify-customer"
+                value="send-mail"
+              />
+              <label for="email-contact">Contact me via email</label>
+            </li>
+            <li class="signup-form">
+              <input
+                type="checkbox"
+                id="postal-contact"
+                name="notify-customer"
+                value="use-post"
+              />
+              <label for="postal-contact">Contact me via post</label>
+            </li>
+            <li class="signup-form">
+              <input
+                type="checkbox"
+                id="call-contact"
+                name="notify-customer"
+                value="make-call"
+              />
+              <label for="call-contact">Contact me via call</label>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section>
+          <div class="signup-form">
+            <input
+              type="checkbox"
+              id="accept-terms"
+              name="terms"
+              value="terms-accepted"
+            />
+            <label for="accept-terms">Do you agree?</label>
+          </div>
+        </section>
+
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>

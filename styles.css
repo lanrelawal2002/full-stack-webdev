@@ -3,6 +3,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header h1 {
+  text-align: center;
+  color: rgb(223, 195, 85);
+}
+
+main form section ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 form {
   background-color: rgb(255, 255, 255);
   width: 30rem;
@@ -36,10 +47,12 @@ textarea:focus {
   border-color: rgb(32, 5, 63);
 }
 
+li.signup-form,
 div.signup-form {
   display: flex;
 }
 
+li.signup-form input,
 div.signup-form input {
   width: auto;
   margin-right: 0.5rem;
