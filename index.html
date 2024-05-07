@@ -23,11 +23,23 @@
           <ul>
             <li>
               <label for="username">Your name</label>
-              <input type="text" name="user-name" id="username" required />
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                required
+                placeholder="Mr. John Onoja"
+              />
             </li>
             <li>
               <label for="useremail">Your email address</label>
-              <input type="email" name="user-email" id="useremail" required />
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                placeholder="yourname@domain.com"
+              />
             </li>
             <li>
               <label for="userpassword">Your password</label>
@@ -38,6 +50,7 @@
                 required
                 minlength="5"
                 maxlength="12"
+                placeholder="use a strong password"
               />
             </li>
           </ul>
@@ -56,6 +69,7 @@
                 required
                 min="18"
                 max="35"
+                placeholder="use numbers only"
               />
             </li>
             <li>
@@ -97,6 +111,8 @@
             required
             minlength="0"
             maxlength="500"
+            placeholder="go ahead and share your thoughts"
+            rows="5"
           ></textarea>
         </section>
 
