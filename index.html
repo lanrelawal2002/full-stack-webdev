@@ -23,15 +23,22 @@
           <ul>
             <li>
               <label for="username">Your name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required />
             </li>
             <li>
               <label for="useremail">Your email address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input type="email" name="user-email" id="useremail" required />
             </li>
             <li>
               <label for="userpassword">Your password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="5"
+                maxlength="12"
+              />
             </li>
           </ul>
         </section>
@@ -41,11 +48,26 @@
           <ul>
             <li>
               <label for="userage">Your age</label>
-              <input type="number" step="1" name="user-age" id="userage" />
+              <input
+                type="number"
+                step="1"
+                name="user-age"
+                id="userage"
+                required
+                min="18"
+                max="35"
+              />
             </li>
             <li>
               <label for="userbirthdate">Your birthdate</label>
-              <input type="date" name="user-birthdate" id="userbirthdate" />
+              <input
+                type="date"
+                name="user-birthdate"
+                id="userbirthdate"
+                required
+                min="2000-08-02"
+                max="2020-06-05"
+              />
             </li>
             <li>
               <label for="favorite-color">What is your favorite color?</label>
@@ -69,7 +91,13 @@
           <label for="usersuggestion"
             >Your suggestion on how we can improve.</label
           >
-          <textarea id="usersuggestion" name="user-suggestion"></textarea>
+          <textarea
+            id="usersuggestion"
+            name="user-suggestion"
+            required
+            minlength="0"
+            maxlength="500"
+          ></textarea>
         </section>
 
         <section>
@@ -81,6 +109,7 @@
                 name="contact-choice"
                 id="verify-sms"
                 value="sms"
+                required
               />
               <label for="verify-sms">Via text message (SMS)</label>
             </li>
@@ -90,6 +119,7 @@
                 name="contact-choice"
                 id="verify-phone-call"
                 value="call"
+                required
               />
               <label for="verify-phone-call">Via phone call</label>
             </li>
@@ -99,6 +129,7 @@
                 name="contact-choice"
                 id="verify-email"
                 value="email"
+                required
               />
               <label for="verify-email">Via email</label>
             </li>
@@ -153,7 +184,8 @@
         </section>
 
         <section>
-          <button>Submit</button>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
         </section>
       </form>
     </main>
