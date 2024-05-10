@@ -1,1 +1,1 @@
-My code from the course 100 days of code by Max and Manu
+My version of the web form challenge by MAX.

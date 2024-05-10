@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Taviraj:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/styles.css" rel="stylesheet" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section class="type-field">
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" id="username" name="user-name" required />
+            </li>
+            <li>
+              <label for="useremail">Your E-mail Address</label>
+              <input type="email" id="useremail" name="user-email" required />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input type="number" id="userphone" name="user-phone" required />
+            </li>
+          </ul>
+        </section>
+
+        <section class="type-field">
+          <label for="usermessage">Your Message</label>
+          <textarea
+            id="usermessage"
+            name="user-message"
+            rows="5"
+            required
+          ></textarea>
+        </section>
+
+        <section class="type-field">
+          <label for="sitediscover">How did you find us?</label>
+          <select id="sitediscover" name="site-discover">
+            <option value="web-search">Web Search</option>
+            <option value="word-of-mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+
+        <section id="radio-buttons">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="make-call"
+                name="reply-by"
+                value="call"
+                required
+              />
+              <label for="make-call">Call me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="send-email"
+                name="reply-by"
+                value="email"
+                required
+              />
+              <label for="send-email">Send me an email</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="do-nothing"
+                name="reply-by"
+                value="dont-reply"
+                required
+              />
+              <label for="do-nothing">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="check-box">
+          <input
+            type="checkbox"
+            id="terms"
+            name="terms-request"
+            value="terms-accepted"
+          />
+          <label for="terms">Accept Terms</label>
+        </section>
+
+        <section id="buttons-only">
+          <button type="reset" id="to-reset">Clear</button>
+          <button type="submit" id="to-submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

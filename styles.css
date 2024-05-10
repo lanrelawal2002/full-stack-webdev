@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(222, 235, 243);
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Taviraj", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main section h2 {
+  font-family: "Taviraj", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+main form {
+  background-color: rgb(231, 245, 253);
+  width: 50rem;
+  margin: 2rem auto 2rem;
+  padding: 0.8rem;
+  border: 2px solid rgb(231, 245, 253);
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+main form section.type-field label,
+main form section.type-field input,
+main form section.type-field textarea,
+main form section.type-field select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main form section.type-field input,
+main form section.type-field textarea,
+main form section.type-field select {
+  padding: 0.2rem;
+  border: 2px solid rgb(225, 225, 225);
+}
+
+main form section.type-field input:focus,
+main form section.type-field textarea:focus {
+  background-color: rgb(234, 234, 255);
+  border: 1px solid rgb(170, 170, 255);
+}
+
+main form section.type-field select:focus {
+  border: 1px solid rgb(170, 170, 255);
+}
+
+main form section.type-field textarea {
+  resize: none;
+}
+
+main form section#radio-buttons,
+main form section#check-box,
+main form section#buttons-only {
+  margin-bottom: 1.2rem;
+}
+
+main form section#radio-buttons input,
+main form section#check-box input {
+  margin: 3px 6px 0px 5px;
+}
+
+main form section#radio-buttons label,
+main form section#check-box label,
+main form section#buttons-only button {
+  font-family: "Roboto", san-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+main form section#buttons-only {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main form section#buttons-only button {
+  padding: 0.4rem 1.5rem;
+  margin-right: 0.25rem;
+}
+
+main form section#buttons-only button#to-reset {
+  background-color: rgb(233, 246, 255);
+  border: 2px solid rgb(211, 216, 217);
+  border-radius: 6px;
+}
+
+main form section#buttons-only button#to-reset:hover {
+  background-color: rgb(183, 204, 219);
+}
+
+main form section#buttons-only button#to-submit {
+  background-color: rgb(29, 15, 109);
+  border: 2px solid rgb(59, 44, 145);
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+main form section#buttons-only button#to-submit:hover {
+  background-color: rgb(59, 44, 145);
+}
+
+main form section ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
