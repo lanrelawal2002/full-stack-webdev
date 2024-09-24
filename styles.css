@@ -66,3 +66,17 @@ input.warning {
 #remaining-chars.warning {
   color: rgb(211, 109, 26);
 }
+
+/* My personal selectors for practice */
+
+#remaining-chars.manage {
+  font-size: 1.6rem;
+}
+
+#remaining-chars.direct {
+  color: rgb(26, 211, 32);
+}
+
+#remaining-chars.control {
+  font-size: 2rem;
+}

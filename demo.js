@@ -15,48 +15,24 @@
 
 // MAX's
 
-let productNameInputElement = document.getElementById("product-name");
-let remainingCharsElement = document.getElementById("remaining-chars");
+const productNameInputElement = document.getElementById("product-name");
+const remainingCharsElement = document.getElementById("remaining-chars");
 
 // console.dir(productNameInputElement);
 
-// block below **********************
+const maxAllowedChars = productNameInputElement.maxLength;
 
-let maxAllowedChars = productNameInputElement.maxLength;
+function updateRemainingCharacters(event) {
+  const inputedText = event.target.value;
+  const inputedTextLength = inputedText.length;
 
-// function updateRemainingCharacters(event) {
-//   let inputedText = event.target.value;
-//   let inputedTextLength = inputedText.length;
+  // remainingCharsElement.textContent = inputedTextLength;
 
-//   // console.log(typeof event.type);
-//   // console.dir(event);
-//   // console.log(event);
+  // let remainingCharacters = event.target.maxLength - inputedTextLength;
 
-//   // remainingCharsElement.textContent = inputedTextLength;
+  const remainingCharacters = maxAllowedChars - inputedTextLength;
 
-//   // let remainingCharacters = event.target.maxLength - inputedTextLength;
+  remainingCharsElement.textContent = remainingCharacters;
+}
 
-//   let remainingCharacters = maxAllowedChars - inputedTextLength;
-
-//   remainingCharsElement.textContent = remainingCharacters;
-// }
-
-productNameInputElement.addEventListener(
-  "input",
-  function updateRemainingCharacters(event) {
-    let inputedText = event.target.value;
-    let inputedTextLength = inputedText.length;
-
-    // console.log(typeof event.type);
-    console.dir(event.target);
-    console.log(event.target);
-
-    // remainingCharsElement.textContent = inputedTextLength;
-
-    // let remainingCharacters = event.target.maxLength - inputedTextLength;
-
-    let remainingCharacters = maxAllowedChars - inputedTextLength;
-
-    remainingCharsElement.textContent = remainingCharacters;
-  }
-);
+productNameInputElement.addEventListener("input", updateRemainingCharacters);
