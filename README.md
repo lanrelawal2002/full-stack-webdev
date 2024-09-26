@@ -1,1 +1,1 @@
-My code and Max's code from the section Advanced JavaScript: Working with the DOM
+My code and Max's code from the section Advanced JavaScript: Control Structures
