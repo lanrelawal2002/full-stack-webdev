@@ -67,6 +67,14 @@ input.warning {
   color: rgb(211, 109, 26);
 }
 
+input.error {
+  background-color: rgb(247, 69, 69);
+}
+
+#remaining-chars.error {
+  color: rgb(211, 26, 26);
+}
+
 /* My personal selectors for practice */
 
 /* #remaining-chars.manage {
