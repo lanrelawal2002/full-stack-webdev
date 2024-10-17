@@ -12,7 +12,7 @@ h1 {
 section {
   margin: 2rem auto;
   width: 95%;
-  max-width: 50rem;
+  max-width: 50rem; /* css new property */
   padding: 1rem 2rem;
   border-radius: 6px;
   background-color: rgb(253, 251, 216);
