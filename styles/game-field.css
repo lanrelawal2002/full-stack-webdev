@@ -1,0 +1,64 @@
+main section#active-game {
+  text-align: center;
+  margin: 2rem 0px 5rem;
+  /* display: none; */
+}
+
+main section#active-game article#game-over {
+  width: 90%;
+  max-width: 40rem;
+  margin: auto;
+  padding: 1rem 2rem;
+  background-color: rgb(50, 5, 87);
+  color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: none;
+}
+
+main section#active-game article#game-over h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0px;
+}
+
+main section#active-game article#game-over p span#new-game {
+  color: rgb(223, 5, 47);
+}
+
+main section#active-game p span#active-player-name {
+  font-weight: bold;
+  color: rgb(50, 5, 87);
+}
+
+main section#active-game ol#game-board {
+  list-style: none;
+  margin: 1rem 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+main section#active-game ol#game-board li {
+  background-color: rgb(215, 187, 247);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+main section#active-game ol#game-board li:hover {
+  /* background-color: rgb(127, 38, 210); */
+  background-color: rgb(142, 68, 211);
+}
+
+main section#active-game ol#game-board li.disabled {
+  /* background-color: rgb(211, 68, 116); */
+  background-color: rgb(221, 113, 149);
+  cursor: default;
+}
