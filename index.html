@@ -14,6 +14,9 @@
     <link href="/styles/overlays.css" rel="stylesheet" />
     <link href="/styles/configuration.css" rel="stylesheet" />
     <link href="/styles/game-field.css" rel="stylesheet" />
+    <script src="/scripts/config.js" defer></script>
+    <script src="/scripts/game.js" defer></script>
+    <script src="/scripts/app.js" defer></script>
     <title>Tic tac toe</title>
   </head>
   <body>
@@ -44,7 +47,7 @@
               <h2>Player 1</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt">Edit</button>
+              <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
             </article>
           </li>
           <li>
@@ -52,7 +55,7 @@
               <h2>Player 2</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt">Edit</button>
+              <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
             </article>
           </li>
         </ol>
