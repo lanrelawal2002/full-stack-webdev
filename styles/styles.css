@@ -37,3 +37,12 @@ header#main-header {
   background-color: rgb(230, 201, 252);
   border-color: rgb(230, 201, 252);
 }
+
+.clear {
+  color: red;
+}
+
+.clear:hover {
+  background-color: rgb(97, 97, 97);
+  color: rgb(255, 255, 255);
+}
