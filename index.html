@@ -31,16 +31,21 @@
         <form>
           <div class="form-control">
             <label for="choose-name">Player name</label>
-            <input type="text" name="playername" id="choose-name" />
-            <label for="choose-description">Choose a description</label>
-            <input type="text" name="playerbio" id="choose-description" />
+            <input type="text" name="playername" id="choose-name" required />
           </div>
+          <p id="config-errors"></p>
           <div>
-            <button type="button" class="btn btn-alt" id="cancel-config-btn">
+            <button type="reset" class="btn btn-alt" id="cancel-config-btn">
               Cancel
             </button>
             <button type="submit" class="btn">Confirm</button>
-            <button type="reset" class="btn btn-alt clear">Reset</button>
+            <button
+              type="reset"
+              class="btn btn-alt clear"
+              id="reset-config-btn"
+            >
+              Reset
+            </button>
           </div>
         </form>
       </aside>

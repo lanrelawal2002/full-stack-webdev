@@ -23,6 +23,16 @@ main form div.form-control input {
   padding: 0.35rem;
 }
 
+main form div.error label {
+  color: rgb(136, 2, 2);
+}
+
+main form div.error input {
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
+
 main section#game-configuration {
   width: 90%;
   max-width: 40rem;
