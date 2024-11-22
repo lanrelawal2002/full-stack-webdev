@@ -1,6 +1,22 @@
+let editedPlayer = "0";
+
+let storedUser = 0;
+
+const players = [
+  {
+    name: "",
+    symbol: "X",
+  },
+  {
+    name: "",
+    symbol: "O",
+  },
+];
+
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 const formElement = document.querySelector("main form");
+const firstInputElement = document.querySelector("main form input#choose-name");
 const errorsOutputElement = document.getElementById("config-errors");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
