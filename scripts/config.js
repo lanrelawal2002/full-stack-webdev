@@ -58,7 +58,7 @@ function savePlayerConfig(event) {
   // }
 
   updatedPlayerDataElement.children[1].textContent = enteredPlayerName;
-  updatedPlayerDataElement.children[1].style.color = "rgb(115, 195, 76)";
+  updatedPlayerDataElement.children[1].style.color = "rgb(201, 195, 76)";
 
   players[storedUser].name = enteredPlayerName;
 
