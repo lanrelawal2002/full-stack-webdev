@@ -21,8 +21,20 @@ function selectGameField(event) {
   //     return;
   //   }
 
-  event.target.textContent = players[activePlayer].symbol;
-  event.target.classList.add("disabled");
+  const selectedField = event.target;
+
+  const selectedRow = +selectedField.dataset.row;
+  const selectedColumn = +selectedField.dataset.col;
+
+  if (gameData[selectedRow - 1][selectedColumn - 1] > 0) {
+    alert("Please Select an Empty Field");
+    return;
+  }
+
+  gameData[selectedRow - 1][selectedColumn - 1] = activePlayer + 1;
+
+  selectedField.textContent = players[activePlayer].symbol;
+  selectedField.classList.add("disabled");
   switchPlayer();
   activePlayerNameElement.textContent = players[activePlayer].name;
 }
