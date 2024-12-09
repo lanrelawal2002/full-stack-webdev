@@ -16,6 +16,52 @@ function switchPlayer() {
   }
 }
 
+function checkForGameOver() {
+  for (let i = 0; i < 3; i++) {
+    // checking for rows
+    if (
+      gameData[i][0] > 0 &&
+      gameData[i][0] === gameData[i][1] &&
+      gameData[i][1] === gameData[i][2]
+    ) {
+      return gameData[i][0];
+    }
+
+    // Checking for columns
+    if (
+      gameData[0][i] > 0 &&
+      gameData[0][i] === gameData[1][i] &&
+      gameData[1][i] === gameData[2][i]
+    ) {
+      return gameData[0][i];
+    }
+  }
+
+  // Checking diagonally; top left to bottom right
+  if (
+    gameData[0][0] > 0 &&
+    gameData[0][0] === gameData[1][1] &&
+    gameData[1][1] === gameData[2][2]
+  ) {
+    return gameData[0][0];
+  }
+
+  // Checking diagonally; bottom left to top right
+  if (
+    gameData[2][0] > 0 &&
+    gameData[2][0] === gameData[1][1] &&
+    gameData[1][1] === gameData[0][2]
+  ) {
+    return gameData[2][0];
+  }
+
+  if (currentRound === 9) {
+    return -1; // For a draw
+  }
+
+  return 0; // If no winner is found yet
+}
+
 function selectGameField(event) {
   //   if (event.target.tagName !== "LI") {
   //     return;
@@ -35,6 +81,11 @@ function selectGameField(event) {
 
   selectedField.textContent = players[activePlayer].symbol;
   selectedField.classList.add("disabled");
+
+  const winnerId = checkForGameOver();
+  console.log(winnerId);
+  currentRound++;
+
   switchPlayer();
   activePlayerNameElement.textContent = players[activePlayer].name;
 }
