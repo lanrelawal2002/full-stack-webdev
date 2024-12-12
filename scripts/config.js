@@ -6,6 +6,12 @@ function resetConfigField() {
 function openPlayerConfig(event) {
   editedPlayer = event.target.dataset.playerid;
   storedUser = +event.target.dataset.playerposition;
+
+  // const currentName = players[storedUser].name;
+  // if (currentName) {
+  //   return;
+  // }
+
   // if (event.target.id === "edit-player-1-btn") {
   //   editedPlayer = "1";
   // } else if (event.target.id === "edit-player-2-btn") {
