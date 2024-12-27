@@ -1,0 +1,54 @@
+body {
+  /* background-color: rgb(255, 248, 230); */
+  background-color: rgb(251, 247, 238);
+  font-family: sans-serif;
+  /* background-color: linear-grdient(
+    0deg,
+    rgb(251, 247, 238),
+    rgb(246, 157, 157)
+  ); */
+}
+
+h1#header-parallax {
+  text-align: center;
+  /* background: linear-gradient(0deg, rgb(196, 255, 248), rgb(221, 253, 255)); */
+}
+
+section#carousel-example {
+  width: 100%;
+  max-width: 50rem;
+  height: 30rem;
+  /* margin: 0px auto 2rem; */
+  margin: 2rem auto;
+}
+
+section#carousel-example div.carousel-inner img {
+  height: 30rem;
+  object-fit: cover;
+}
+
+section#newsletter-signup {
+  max-width: 30rem;
+  margin: 4rem auto;
+}
+
+section#newsletter-signup button#lanre-one {
+  /* background-color: rgb(238, 55, 137); */
+  /* border-color: rgb(11, 61, 12); */
+  border-color: rgb(223, 8, 105);
+  border-radius: 0px;
+  /* cursor: default; */
+}
+
+section.for-parallax {
+  width: 100%;
+  max-width: 50rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+img#main-image {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
