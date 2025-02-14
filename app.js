@@ -12,7 +12,7 @@ function handleRequest(request, response) {
     response.end("<p>" + new Date().toISOString() + "</p>");
   } else if (request.url === "/") {
     response.statusCode = 200;
-    response.end("<p>" + "Brilliant. You reached the correct port." + "</p>");
+    response.end("<p>" + "Alright. You reached the correct port." + "</p>");
   }
 }
 
