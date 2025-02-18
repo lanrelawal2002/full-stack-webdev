@@ -1,21 +1,13 @@
-// const userName = "Lanny";
-// const userNumber = 33;
+const express = require("express");
 
-// console.log(userName, typeof userName);
-// console.log(typeof userNumber);
+const app = express();
 
-const http = require("http");
+app.get("/currenttime", function (req, res) {
+  res.send("<p>" + new Date().toISOString() + "</p>");
+});
 
-function handleRequest(request, response) {
-  if (request.url === "/currenttime") {
-    response.statusCode = 200;
-    response.end("<p>" + new Date().toISOString() + "</p>");
-  } else if (request.url === "/") {
-    response.statusCode = 200;
-    response.end("<p>" + "Alright. You reached the correct port." + "</p>");
-  }
-}
+app.get("/", function (req, res) {
+  res.send("<p>Hello World!</p>");
+});
 
-const server = http.createServer(handleRequest);
-
-server.listen(3000);
+app.listen(3000);
