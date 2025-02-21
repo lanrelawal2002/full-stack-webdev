@@ -1,3 +1,7 @@
+const fs = require("fs");
+
+const path = require("path");
+
 const express = require("express");
 
 const app = express();
@@ -16,10 +20,19 @@ app.get("/", function (req, res) {
 
 app.post("/store-user", function (req, res) {
   const userName = req.body.username;
-  console.log("The username is", userName);
-  console.log(req.body);
+
+  const filePath = path.join(__dirname, "data", "users.json");
+
+  const fileData = fs.readFileSync(filePath);
+
+  const existingUsers = JSON.parse(fileData);
+
+  existingUsers.push(userName);
+
+  fs.writeFileSync(filePath, JSON.stringify(existingUsers));
+
   res.send(
-    "<h1 style='color: green; font-style: italic;'>Your name was successfully submitted!</h1>"
+    "<h1 style='color: purple; font-size: 1.5rem;'>Name submission is successful!</h1>"
   );
 });
 
