@@ -32,8 +32,26 @@ app.post("/store-user", function (req, res) {
   fs.writeFileSync(filePath, JSON.stringify(existingUsers));
 
   res.send(
-    "<h1 style='color: purple; font-size: 1.5rem;'>Name submission is successful!</h1>"
+    "<h1 style='color: grey; font-size: 1.5rem;'>Name submission is successful!</h1>"
   );
+});
+
+app.get("/users", function (req, res) {
+  const filePath = path.join(__dirname, "data", "users.json");
+
+  const fileData = fs.readFileSync(filePath);
+
+  const existingUsers = JSON.parse(fileData);
+
+  let responseData = "<ul>";
+
+  for (const user of existingUsers) {
+    responseData += "<li>" + user + "</li>";
+  }
+
+  responseData += "</ul>";
+
+  res.send(responseData);
 });
 
 app.listen(3000);
