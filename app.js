@@ -14,7 +14,7 @@ app.get("/currenttime", function (req, res) {
 
 app.get("/", function (req, res) {
   res.send(
-    "<form action='/store-user' method='POST'><label for='express'>Your Name</label><input id='express' type='text' name='username' /><button type='submit'>Submit Form</button></form>"
+    "<form action='/store-user' method='POST'><label for='express'>Enter Your Full Name: </label><input id='express' type='text' name='username' /><button type='submit'>Submit Form</button></form>"
   );
 });
 
