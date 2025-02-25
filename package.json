@@ -1,0 +1,28 @@
+{
+  "name": "building-with-express",
+  "version": "1.0.0",
+  "description": "More Express: Static and Dynamic Content with Templates",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "version": "nodemon -h"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanrelawal2002/full-stack-webdev.git"
+  },
+  "author": "Lanre-Lawal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lanrelawal2002/full-stack-webdev/issues"
+  },
+  "homepage": "https://github.com/lanrelawal2002/full-stack-webdev#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
