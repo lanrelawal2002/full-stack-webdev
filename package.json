@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "version": "nodemon -h"
+    "partialHelp": "nodemon -h",
+    "fullHelp": "nodemon --help options"
   },
   "keywords": [],
   "repository": {
