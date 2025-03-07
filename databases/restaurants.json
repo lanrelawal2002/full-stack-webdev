@@ -54,5 +54,26 @@
     "cuisine": "Local",
     "website": "https://shayimasters.com",
     "description": "Why wouldn't I recommend it."
+  },
+  {
+    "name": "Southern Fried Chicken",
+    "address": "8 Beach Road",
+    "cuisine": "Nigerian",
+    "website": "https://sfcrestaurants.com",
+    "description": "Has a global franchise."
+  },
+  {
+    "name": "Southern Fried Chicken",
+    "address": "8 Beach Road",
+    "cuisine": "Nigerian",
+    "website": "https://sfcrestaurants.com",
+    "description": "Spacious with more than enough room for many customers."
+  },
+  {
+    "name": "Calabar Restaurant",
+    "address": "Miango Junction Jos",
+    "cuisine": "Local and intercontinental",
+    "website": "https://calabarrestaurant.com",
+    "description": "No comment here."
   }
 ]
