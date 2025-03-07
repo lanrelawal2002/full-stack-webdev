@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Shayi Masters",
+    "address": "Oki Street Area 11, Abuja",
+    "cuisine": "Local",
+    "website": "https://shayimasters.com",
+    "description": "It's close to the hotel and it has a pretty serene environment."
+  },
+  {
+    "name": "Net Cafe",
+    "address": "No. 13 Ahmadu Bello Way",
+    "cuisine": "Intercontinental",
+    "website": "https://netcafeplace.org",
+    "description": "The offerings are up to standard and the restaurant is in the heart of town."
+  },
+  {
+    "name": "Calabar Restaurant",
+    "address": "Miango Junction Jos",
+    "cuisine": "Local and intercontinental",
+    "website": "https://calabarrestaurant.com",
+    "description": "A trusted friend recommended it."
+  },
+  {
+    "name": "Honey Tops",
+    "address": "No. 1 Dimka Gomwolk road",
+    "cuisine": "Mixed",
+    "website": "https://honeytops.org",
+    "description": "It's closer to home though not top notch."
+  },
+  {
+    "name": "Calabar Restaurant",
+    "address": "Miango Junction Jos",
+    "cuisine": "Local and intercontinental",
+    "website": "https://calabarrestaurant.com",
+    "description": "Leave blank."
+  },
+  {
+    "name": "Honey Tops",
+    "address": "No. 1 Dimka Gomwolk road",
+    "cuisine": "Mixed",
+    "website": "https://honeytops.org",
+    "description": "Do not disturb."
+  },
+  {
+    "name": "Net Cafe",
+    "address": "No. 13 Ahmadu Bello Way",
+    "cuisine": "Intercontinental",
+    "website": "https://netcafeplace.org",
+    "description": "I do not recommend."
+  },
+  {
+    "name": "Shayi Masters",
+    "address": "Oki Street Area 11, Abuja",
+    "cuisine": "Local",
+    "website": "https://shayimasters.com",
+    "description": "Why wouldn't I recommend it."
+  }
+]
