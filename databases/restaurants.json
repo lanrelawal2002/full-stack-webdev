@@ -75,5 +75,12 @@
     "cuisine": "Local and intercontinental",
     "website": "https://calabarrestaurant.com",
     "description": "No comment here."
+  },
+  {
+    "name": "Southern Fried Chicken",
+    "address": "8 Beach Road",
+    "cuisine": "Japanese",
+    "website": "https://sfcrestaurants.com",
+    "description": "Because it is Japanese!"
   }
 ]
