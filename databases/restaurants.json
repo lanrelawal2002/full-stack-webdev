@@ -82,5 +82,12 @@
     "cuisine": "Japanese",
     "website": "https://sfcrestaurants.com",
     "description": "Because it is Japanese!"
+  },
+  {
+    "name": "Sweet Sensation",
+    "address": "Oban Akran Avenue, Ikeja, Lagos.",
+    "cuisine": "Ghanian.",
+    "website": "https://sweetsensationglobal.com",
+    "description": "The food is always delicious and freshly cooked."
   }
 ]
