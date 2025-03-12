@@ -8,11 +8,10 @@
     <%- include("includes/header") %> <%- include("includes/side-drawer") %>
     <main>
       <h1>Recommended restaurants</h1>
-      <% if (numberOfRestaurants < 1) { %>
-      <p>There are no restaurants to display. Consider recommending.</p>
-      <% } else { %>
+      <% if (numberOfRestaurants < 1) { %> <%-
+      include("includes/restaurant/no-restaurant") %> <% } else { %>
       <p>Find your next favorite restaurants with help of our other users!</p>
-      <p id="rendered">We found <%= numberOfRestaurants %> restaurants</p>
+      <p id="rendered">We found <%= numberOfRestaurants %> restaurant(s)</p>
       <ul id="restaurants-list">
         <% for (const restaurant of restaurants) { %> <%-
         include("includes/restaurant/restaurant-item", { restaurantObject:

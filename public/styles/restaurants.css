@@ -2,6 +2,16 @@ main {
   max-width: 40rem;
 }
 
+main p#rendered {
+  font-style: italic;
+}
+
+main p#no-restaurant {
+  /* background-color: rgba(106, 128, 166); */
+  background-color: rgb(81, 77, 77);
+  color: rgb(255, 255, 255);
+}
+
 #restaurants-list {
   list-style: none;
   margin: 2rem 0;
@@ -19,7 +29,7 @@ main {
 }
 
 .restaurant-item h2 {
-  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
   font-size: 1.25rem;
   margin: 0.25rem 0;
 }
