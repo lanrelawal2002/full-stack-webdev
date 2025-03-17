@@ -13,6 +13,9 @@ main p#no-restaurant {
 }
 
 #restaurants-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem 0.3rem;
   list-style: none;
   margin: 2rem 0;
   padding: 0;
@@ -63,4 +66,12 @@ main p#no-restaurant {
 .restaurant-actions a:hover,
 .restaurant-actions a:active {
   background-color: rgb(202, 141, 62);
+}
+
+@media (min-width: 60rem) {
+  #restaurants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+  }
 }
