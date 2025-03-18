@@ -30,7 +30,7 @@ app.get("/restaurants", function (req, res) {
 
 app.get("/restaurants/:rid", function (req, res) {
   const restaurantId = req.params.rid;
-  console.log(typeof restaurantId);
+  // console.log(typeof restaurantId);
 
   const filePath = path.join(__dirname, "databases", "restaurants.json");
   const fileData = fs.readFileSync(filePath);
@@ -41,6 +41,8 @@ app.get("/restaurants/:rid", function (req, res) {
       return res.render("restaurant-detail", { randomRestaurant: restaurant });
     }
   }
+
+  res.render("404");
 });
 
 app.get("/recommend", function (req, res) {
@@ -67,6 +69,10 @@ app.post("/new-restaurant", function (req, res) {
   fs.writeFileSync(filePath, JSON.stringify(storedRestaurants));
 
   res.redirect("/confirm");
+});
+
+app.get("/:url", function (req, res) {
+  res.render("404");
 });
 
 app.listen(3000);
