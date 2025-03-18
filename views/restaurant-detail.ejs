@@ -7,10 +7,10 @@
   <body>
     <%- include("includes/header") %> <%- include("includes/side-drawer") %>
     <main>
-      <h1>TITLE OF THE RESTAURANT <%= randomRestaurant %></h1>
-      <p>Cuisine | Address</p>
-      <p>Description of the restaurant</p>
-      <p><a href="">View Website</a></p>
+      <h1><%= randomRestaurant.name %></h1>
+      <p><%= randomRestaurant.cuisine %> | <%= randomRestaurant.address %></p>
+      <p><%= randomRestaurant.description %></p>
+      <p><a href="<%= randomRestaurant.website %>">View Website</a></p>
     </main>
   </body>
 </html>

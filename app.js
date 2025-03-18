@@ -30,8 +30,17 @@ app.get("/restaurants", function (req, res) {
 
 app.get("/restaurants/:rid", function (req, res) {
   const restaurantId = req.params.rid;
-  res.render("restaurant-detail", { randomRestaurant: restaurantId });
-  // console.log(typeof restaurantId);
+  console.log(typeof restaurantId);
+
+  const filePath = path.join(__dirname, "databases", "restaurants.json");
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
+
+  for (const restaurant of storedRestaurants) {
+    if (restaurant.id === restaurantId) {
+      return res.render("restaurant-detail", { randomRestaurant: restaurant });
+    }
+  }
 });
 
 app.get("/recommend", function (req, res) {
@@ -51,7 +60,6 @@ app.post("/new-restaurant", function (req, res) {
   newRestaurant.id = uuid.v4();
 
   const filePath = path.join(__dirname, "databases", "restaurants.json");
-
   const fileData = fs.readFileSync(filePath);
   const storedRestaurants = JSON.parse(fileData);
 
