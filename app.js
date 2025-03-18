@@ -1,6 +1,6 @@
-const fs = require("fs");
+const fs = require("node:fs");
 
-const path = require("path");
+const path = require("node:path");
 
 const express = require("express");
 
@@ -71,7 +71,7 @@ app.post("/new-restaurant", function (req, res) {
   res.redirect("/confirm");
 });
 
-app.get("/:url", function (req, res) {
+app.use(function (req, res) {
   res.render("404");
 });
 
