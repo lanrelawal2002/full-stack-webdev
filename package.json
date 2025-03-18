@@ -22,7 +22,8 @@
   "homepage": "https://github.com/lanrelawal2002/full-stack-webdev#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

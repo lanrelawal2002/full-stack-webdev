@@ -4,6 +4,8 @@ const path = require("path");
 
 const express = require("express");
 
+const uuid = require("uuid");
+
 const app = express();
 
 app.set("views", path.join(__dirname, "views"));
@@ -46,6 +48,8 @@ app.get("/confirm", function (req, res) {
 
 app.post("/new-restaurant", function (req, res) {
   const newRestaurant = req.body;
+  newRestaurant.id = uuid.v4();
+
   const filePath = path.join(__dirname, "databases", "restaurants.json");
 
   const fileData = fs.readFileSync(filePath);
