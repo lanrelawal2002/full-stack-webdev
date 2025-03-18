@@ -2,12 +2,12 @@
   <article>
     <h2><%= restaurantObject["name"] %></h2>
     <div class="restaurant-meta">
-      <p><%= restaurantObject["cuisine"] %></p>
-      <p><%= restaurantObject["address"] %></p>
+      <p><%= restaurantObject.cuisine %></p>
+      <p><%= restaurantObject.address %></p>
     </div>
     <p><%= restaurantObject["description"] %></p>
     <div class="restaurant-actions">
-      <a href="<%= restaurantObject['website'] %>">View Website</a>
+      <a href="/restaurants/sfc">View Restaurant</a>
     </div>
   </article>
 </li>

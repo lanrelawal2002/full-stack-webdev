@@ -26,6 +26,12 @@ app.get("/restaurants", function (req, res) {
   });
 });
 
+app.get("/restaurants/:rid", function (req, res) {
+  const restaurantId = req.params.rid;
+  res.render("restaurant-detail", { randomRestaurant: restaurantId });
+  // console.log(typeof restaurantId);
+});
+
 app.get("/recommend", function (req, res) {
   res.render("recommend");
 });
