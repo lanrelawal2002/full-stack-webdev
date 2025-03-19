@@ -15,14 +15,14 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", function (req, res) {
-  res.render("index");
+  res.status(200).render("index");
 });
 
 app.get("/restaurants", function (req, res) {
   const filePath = path.join(__dirname, "databases", "restaurants.json");
   const fileData = fs.readFileSync(filePath);
   const storedRestaurants = JSON.parse(fileData);
-  res.render("restaurants", {
+  res.status(200).render("restaurants", {
     numberOfRestaurants: storedRestaurants.length,
     restaurants: storedRestaurants,
   });
@@ -38,23 +38,25 @@ app.get("/restaurants/:rid", function (req, res) {
 
   for (const restaurant of storedRestaurants) {
     if (restaurant.id === restaurantId) {
-      return res.render("restaurant-detail", { randomRestaurant: restaurant });
+      return res
+        .status(200)
+        .render("restaurant-detail", { randomRestaurant: restaurant });
     }
   }
 
-  res.render("404");
+  res.status(404).render("404");
 });
 
 app.get("/recommend", function (req, res) {
-  res.render("recommend");
+  res.status(200).render("recommend");
 });
 
 app.get("/about", function (req, res) {
-  res.render("about");
+  res.status(200).render("about");
 });
 
 app.get("/confirm", function (req, res) {
-  res.render("confirm");
+  res.status(200).render("confirm");
 });
 
 app.post("/new-restaurant", function (req, res) {
@@ -72,11 +74,11 @@ app.post("/new-restaurant", function (req, res) {
 });
 
 app.use(function (req, res) {
-  res.render("404");
+  res.status(404).render("404");
 });
 
 app.use(function (error, req, res, next) {
-  res.render("500");
+  res.status(500).render("500");
 });
 
 app.listen(3000);
