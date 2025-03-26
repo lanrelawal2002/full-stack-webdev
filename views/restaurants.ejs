@@ -12,6 +12,10 @@
       include("includes/restaurant/no-restaurant") %> <% } else { %>
       <p>Find your next favorite restaurants with help of our other users!</p>
       <p id="rendered">We found <%= numberOfRestaurants %> restaurant(s)</p>
+      <form action="/restaurants" method="GET">
+        <input type="hidden" value="<%= nextOrder %>" name="order" />
+        <button class="btn">Change Order</button>
+      </form>
       <ul id="restaurants-list">
         <% for (const restaurant of restaurants) { %> <%-
         include("includes/restaurant/restaurant-item", { restaurantObject:

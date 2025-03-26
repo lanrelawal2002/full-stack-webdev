@@ -6,11 +6,34 @@ const uuid = require("uuid");
 const restaurantPackage = require("../utilities/restaurant-info/restaurant-data");
 
 router.get("/restaurants", function (req, res) {
+  let sortDisplay = req.query.order;
+
+  let flipOrder = "desc";
+
+  if (sortDisplay !== "asc" && sortDisplay !== "desc") {
+    sortDisplay = "asc";
+  }
+
+  if (sortDisplay === "desc") {
+    flipOrder = "asc";
+  }
+
   const storedRestaurants = restaurantPackage.getStoredRestaurants();
+
+  storedRestaurants.sort(function (resA, resB) {
+    if (
+      (sortDisplay === "asc" && resA.name > resB.name) ||
+      (sortDisplay === "desc" && resB.name > resA.name)
+    ) {
+      return 1;
+    }
+    return -1;
+  });
 
   res.status(200).render("restaurants", {
     numberOfRestaurants: storedRestaurants.length,
     restaurants: storedRestaurants,
+    nextOrder: flipOrder,
   });
 });
 

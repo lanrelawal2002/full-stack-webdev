@@ -1,7 +1,6 @@
 const path = require("node:path");
 
 const express = require("express");
-const uuid = require("uuid");
 
 const defaultRoutes = require("./routes/default");
 const restaurantRoutes = require("./routes/restaurants");
