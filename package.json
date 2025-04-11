@@ -1,0 +1,29 @@
+{
+  "name": "sql-database",
+  "version": "1.0.0",
+  "description": "Using MySQL in NodeJS & Express Websites",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "partialHelp": "nodemon -h",
+    "fullHelp": "nodemon --help options"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanrelawal2002/full-stack-webdev.git"
+  },
+  "author": "Lanre-Lawal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lanrelawal2002/full-stack-webdev/issues"
+  },
+  "homepage": "https://github.com/lanrelawal2002/full-stack-webdev#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
