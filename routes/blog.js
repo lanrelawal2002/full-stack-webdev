@@ -5,11 +5,15 @@ const db = require("../data/database");
 const router = express.Router();
 
 router.get("/", function (req, res) {
-  res.status(200).redirect("/posts");
+  res.redirect("/posts");
 });
 
-router.get("/posts", function (req, res) {
-  res.status(200).render("posts-list");
+router.get("/posts", async function (req, res) {
+  const postQuery = `SELECT posts.title, posts.summary, authors.name FROM blog.posts 
+  INNER JOIN authors ON posts.author_id = authors.id`;
+  const result = await db.query(postQuery);
+  const [selectedPosts] = result;
+  res.status(200).render("posts-list", { usefulPosts: selectedPosts });
 });
 
 router.get("/new-post", async function (req, res) {
@@ -21,6 +25,22 @@ router.get("/new-post", async function (req, res) {
   //   console.log(authors);
   //   console.log(typeof authors);
   res.status(200).render("create-post", { allAuthors: authors });
+});
+
+router.post("/new-entry", async function (req, res) {
+  const formEntries = [
+    req.body.title,
+    req.body.summary,
+    req.body.content,
+    req.body.author,
+  ];
+
+  await db.query(
+    "INSERT INTO blog.posts (title, summary, body, author_id) VALUES (?)",
+    [formEntries]
+  );
+
+  res.redirect("/posts");
 });
 
 module.exports = router;
