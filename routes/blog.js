@@ -25,13 +25,25 @@ router.get("/posts/:id", async function (req, res) {
   INNER JOIN authors ON posts.author_id = authors.id
   WHERE posts.id = ?`;
   const result = await db.query(query, [req.params.id]);
-  const [post] = result;
+  const [post] = result; // array destructring
 
   if (!post || post.length === 0) {
     return res.status(404).render("404");
   }
 
-  res.status(200).render("post-detail", { post: post[0] });
+  postData = {
+    ...post[0],
+    date: post[0].date.toISOString(),
+    humanReadableDate: post[0].date.toLocaleDateString("en-US", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }),
+    body: post[0].body.toUpperCase(),
+  };
+
+  res.status(200).render("post-detail", { post: postData });
 });
 
 router.get("/new-post", async function (req, res) {
