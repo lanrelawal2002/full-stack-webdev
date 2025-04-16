@@ -8,7 +8,7 @@
   <body>
     <%- include('includes/header') %>
     <main id="all-posts">
-      <h1>All Posts</h1>
+      <h1>All Posts (<%= totalPosts %>)</h1>
       <% if (!usefulPosts || usefulPosts.length === 0) { %>
       <p>No posts found. Create new posts.</p>
       <a href="/new-post" class="btn">Create a new post.</a>
