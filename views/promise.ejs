@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Practise async ops' }) %>
+    <link rel="stylesheet" href="/styles/posts.css" />
+  </head>
+
+  <body>
+    <%- include('includes/header') %>
+    <main id="all-posts">
+      <h1>AUTHOR INFO</h1>
+      <p>The selected author is <%= authorInfo.name %></p>
+      <address>
+        <a href="mailto:<%= authorInfo.email %>">Send author an email now.</a>
+      </address>
+    </main>
+  </body>
+</html>
