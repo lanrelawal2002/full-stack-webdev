@@ -8,7 +8,7 @@ router.get("/", function (req, res) {
   res.redirect("/posts");
 });
 
-// route handler to practice async ops with promises
+// route handler to practice async ops with promises.
 router.get("/promise", function (req, res) {
   db.query("SELECT * FROM authors WHERE id = 2").then(function (data, error) {
     // console.log(`This comes second`);
@@ -97,6 +97,20 @@ router.post("/new-entry", async function (req, res) {
     "INSERT INTO blog.posts (title, summary, body, author_id) VALUES (?)",
     [formEntries]
   );
+
+  res.redirect("/posts");
+});
+
+router.post("/posts/:id/edit", async function (req, res) {
+  const query = `UPDATE blog.posts SET title = ?, summary = ?, body = ?
+  WHERE id = ?`;
+
+  await db.query(query, [
+    req.body.title,
+    req.body.summary,
+    req.body.content,
+    req.params.id,
+  ]);
 
   res.redirect("/posts");
 });
