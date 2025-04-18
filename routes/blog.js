@@ -62,6 +62,18 @@ router.get("/posts/:id", async function (req, res) {
   res.status(200).render("post-detail", { post: postData });
 });
 
+router.get("/posts/:id/edit", async function (req, res) {
+  const query = `SELECT * FROM posts WHERE id = ?`;
+  const result = await db.query(query, [req.params.id]);
+  const [post] = result;
+
+  if (!post || post.length === 0) {
+    return res.status(404).render("404");
+  }
+
+  res.status(200).render("update-post", { post: post[0] });
+});
+
 router.get("/new-post", async function (req, res) {
   const result = await db.query("SELECT * FROM blog.authors");
   //   console.log(result);
